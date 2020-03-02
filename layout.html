@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        table{
+            width: 100%;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        tr, td{
+            border: 1px solid black;
+        }
+        td.logo{
+            width: 10%;
+        }
+        .banner{
+            background-image: url('https://picsum.photos/900/100');
+            background-size: cover;
+            text-align: right;
+        }
+        .menu ul{
+            list-style-type: none;
+            display: flex;
+        }
+        .menu li{
+            padding-left: 5px;
+        }
+        .menu li::after{
+            content: "/";
+        }
+        .item p img{
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <table width="1000px">
+        <tr>
+            <td>
+                <table class="header" >
+                    <tr>
+                        <td class="logo">
+                            <table >
+                                <tr>
+                                    <td>
+                                        <img src="https://picsum.photos/100" alt="" srcset="">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="banner">
+                            <a href="/">Seting</a><a href="/">An</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="menu">
+                <ul>
+                    <li>Home</li>
+                    <li>Thể thao</li>
+                    <li>Y tế</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <table >
+                    <tr>
+                        <td class="side-bar">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <ul>
+                                            <li><span><img src="https://picsum.photos/25" alt=""></span>Thể Thao</li>
+                                            <li><ul>
+                                                <li>Bóng đá</li>
+                                                <li>Bóng chuyền</li>
+                                                <li>Bóng rổ</li>
+                                            </ul></li>
+                                        </ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul>
+                                            <li><span><img src="https://picsum.photos/25" alt=""></span>Y tế</li>
+                                            <li><ul>
+                                                <li>Vaccine</li>
+                                                <li>Sức khỏe</li>
+                                                
+                                            </ul></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="content">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <table class="item">
+                                            <tr>
+                                                <td colspan="2">
+                                                    <h2><span><img src="https://picsum.photos/25" alt=""></span>Tiêu đề</h2>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                   
+                                                    <p> <img src="https://picsum.photos/200" alt="">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, alias? Delectus doloremque suscipit, recusandae, odio commodi magnam nihil distinctio, sapiente numquam praesentium esse necessitatibus minus dolore iste quibusdam. Nemo, delectus.
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. A officiis rerum nulla deserunt dicta inventore. Quas eveniet veniam ipsum ab nisi laboriosam doloribus, sequi mollitia ad non quis ex adipisci!
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni enim tenetur dolorem illo. Exercitationem incidunt a unde accusantium optio, quos veritatis. Velit optio ipsum non nihil esse veritatis animi ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sed necessitatibus veritatis et illo amet? Error, suscipit quia tempora nobis quisquam natus voluptatum eaque, deserunt odio praesentium magnam, quis neque? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente debitis autem praesentium atque nihil? Ab distinctio asperiores voluptate minima dolore rerum sequi fuga harum ea in, non blanditiis sunt commodi? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam reiciendis ducimus reprehenderit dolorem quo consequuntur praesentium fuga, dignissimos perspiciatis culpa minima delectus libero repellat, cumque nemo vel, optio odio magni!
+                                                    <a href="/">Xem thêm</a>
+                                                    </p>
+                                                </td>
+                            
+                                            </tr>
+
+                                       
+
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td >
+                                        <table class="item">
+                                            <tr>
+                                                <td colspan="2"> 
+                                                    <h2><span><img src="https://picsum.photos/25" alt=""></span>Tiêu đề</h2>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <iframe width="560" height="300" src="https://www.youtube.com/embed/_qAL0fKgfk0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="frend-list">
+                            <ul>
+                                <li>Frend-1</li>
+                                <li>Frend-2</li>
+                                <li>Frend-3</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+           
+        </tr>
+        <tr >
+            <td >
+                <table class="Widget">
+                       <tr>
+                           <td>
+                               <table>
+                                   <tr>
+                                       <td>Item-1</td>
+                                   </tr>
+                                   <tr>
+                                       <td>abc</td>
+                                   </tr>
+                                   <tr>
+                                       <td>bcd</td>
+                                   </tr>
+                                   <tr>
+                                       <td>cef</td>
+                                   </tr>
+                                   <tr>
+                                       <td>ghi</td>
+                                   </tr>
+                               </table>
+                           </td>
+                           <td>
+                            <table>
+                                <tr>
+                                    <td>Item-2</td>
+                                </tr>
+                                <tr>
+                                    <td>abc</td>
+                                </tr>
+                                <tr>
+                                    <td>bcd</td>
+                                </tr>
+                                <tr>
+                                    <td>cef</td>
+                                </tr>
+                                <tr>
+                                    <td>ghi</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>Item-3</td>
+                                </tr>
+                                <tr>
+                                    <td>abc</td>
+                                </tr>
+                                <tr>
+                                    <td>bcd</td>
+                                </tr>
+                                <tr>
+                                    <td>cef</td>
+                                </tr>
+                                <tr>
+                                    <td>ghi</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>Item-4</td>
+                                </tr>
+                                <tr>
+                                    <td>abc</td>
+                                </tr>
+                                <tr>
+                                    <td>bcd</td>
+                                </tr>
+                                <tr>
+                                    <td>cef</td>
+                                </tr>
+                                <tr>
+                                    <td>ghi</td>
+                                </tr>
+                            </table>
+                        </td>
+                       </tr>
+                </table>
+            </td>
+            
+        </tr>
+        <tr>
+            <td class="copy-right">
+                &copy
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
